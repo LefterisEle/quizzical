@@ -1,16 +1,18 @@
+import React from "react";
 import {Routes, Route} from 'react-router-dom'
-import StartingPage from './pages/StartingPage'
-import Questions from './pages/Questions'
+import LandingPage from "./pages/LandingPage";
+import QuizPage from "./pages/QuizPage";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<StartingPage />} />
-        <Route path="/questions" element={<Questions />} />
-      </Routes>
-    </div>
+    <div className="w-full h-full">
 
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/questions" element={<QuizPage />} />
+      </Routes>
+
+    </div>
   );
 }
 
